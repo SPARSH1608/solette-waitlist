@@ -8,7 +8,7 @@ const FeatureSection: React.FC = () => {
   useEffect(() => {
     const fetchCount = async () => {
       try {
-        const res = await fetch('http://localhost:3001/api/waitlist/count');
+        const res = await fetch('/api/waitlist/count');
         const data = await res.json();
         setWaitlistCount(data.count);
       } catch (err) {

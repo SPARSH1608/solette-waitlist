@@ -17,7 +17,7 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose }) => {
         setStatus('loading');
 
         try {
-            const response = await fetch('http://localhost:3001/api/waitlist', {
+            const response = await fetch('/api/waitlist', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email }),
@@ -85,8 +85,8 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose }) => {
                             type="submit"
                             disabled={status === 'loading' || status === 'success'}
                             className={`w-full py-4 rounded-xl font-black uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 ${status === 'success'
-                                    ? 'bg-emerald-500 text-white'
-                                    : 'bg-[#14F195] hover:bg-[#0fd985] text-black shadow-[0_0_20px_rgba(20,241,149,0.3)]'
+                                ? 'bg-emerald-500 text-white'
+                                : 'bg-[#14F195] hover:bg-[#0fd985] text-black shadow-[0_0_20px_rgba(20,241,149,0.3)]'
                                 }`}
                         >
                             {status === 'loading' ? (

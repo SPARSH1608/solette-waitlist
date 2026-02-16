@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev:server": "nodemon --watch api --exec ts-node api/index.ts",
+    "build": "prisma generate && vite build",
+    "preview": "vite preview",
+    "vercel-build": "prisma generate && vite build"
   },
   "dependencies": {
     "@prisma/client": "^6.4.0",
