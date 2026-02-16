@@ -87,7 +87,7 @@ const FeatureSection: React.FC = () => {
       {/* FULL BACKGROUND IMAGE INTEGRATION WITH ROTATION */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
-          src="/components/assets/image(1).jpeg"
+          src="/assets/image(1).jpeg"
           className="w-full h-full object-cover opacity-40 md:opacity-60 will-change-transform"
           style={{
             transform: `scale(2.2) rotate(${rotation}deg)`

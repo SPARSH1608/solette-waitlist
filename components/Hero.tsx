@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           playsInline
           className="w-full h-full object-cover scale-110 opacity-60"
         >
-          <source src="/components/assets/output.mp4" type="video/mp4" />
+          <source src="/assets/output.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Animated Solana Pulse */}

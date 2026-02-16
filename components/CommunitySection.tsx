@@ -7,7 +7,7 @@ const CommunitySection: React.FC = () => {
       {/* FULL BACKGROUND IMAGE INTEGRATION */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/components/assets/image.jpeg"
+          src="/assets/image.jpeg"
           className="w-full ml-16 h-full object-cover opacity-60 md:opacity-100"
           alt="Community Experience"
         />
