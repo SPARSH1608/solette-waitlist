@@ -52,21 +52,21 @@ const FeatureSection: React.FC = () => {
 
   // Updated chip data with specific colors and values
   const chips = [
-    { id: 1, top: '10%', left: '5%', size: 'w-24 h-24', text: 'WEB3', color: 'emerald' },
-    { id: 2, top: '25%', left: '15%', size: 'w-16 h-16', text: 'SOL', color: 'white' },
-    { id: 3, top: '45%', left: '12%', size: 'w-20 h-20', text: 'FAST', color: 'red' },
-    { id: 4, top: '70%', left: '8%', size: 'w-32 h-32', text: 'HIGH', color: 'white' },
-    { id: 5, top: '85%', left: '20%', size: 'w-16 h-16', text: 'PAY', color: 'red' },
+    { id: 1, top: '10%', left: '5%', size: 'w-16 h-16 md:w-24 md:h-24', text: 'WEB3', color: 'emerald' },
+    { id: 2, top: '25%', left: '15%', size: 'w-12 h-12 md:w-16 md:h-16', text: 'SOL', color: 'white' },
+    { id: 3, top: '45%', left: '12%', size: 'w-14 h-14 md:w-20 md:h-20', text: 'FAST', color: 'red' },
+    { id: 4, top: '70%', left: '8%', size: 'w-20 h-20 md:w-32 md:h-32', text: 'HIGH', color: 'white' },
+    { id: 5, top: '85%', left: '20%', size: 'w-12 h-12 md:w-16 md:h-16', text: 'PAY', color: 'red' },
 
-    { id: 6, top: '5%', right: '10%', size: 'w-20 h-20', text: 'WIN', color: 'emerald' },
-    { id: 7, top: '20%', right: '5%', size: 'w-28 h-28', text: 'BET', color: 'white' },
-    { id: 8, top: '40%', right: '15%', size: 'w-14 h-14', text: 'P2P', color: 'red' },
-    { id: 9, top: '65%', right: '8%', size: 'w-36 h-36', text: 'SECURE', color: 'emerald' },
-    { id: 10, top: '88%', right: '18%', size: 'w-24 h-24', text: 'GAS', color: 'white' },
+    { id: 6, top: '5%', right: '10%', size: 'w-14 h-14 md:w-20 md:h-20', text: 'WIN', color: 'emerald' },
+    { id: 7, top: '20%', right: '5%', size: 'w-20 h-20 md:w-28 md:h-28', text: 'BET', color: 'white' },
+    { id: 8, top: '40%', right: '15%', size: 'w-12 h-12 md:w-14 md:h-14', text: 'P2P', color: 'red' },
+    { id: 9, top: '65%', right: '8%', size: 'w-24 h-24 md:w-36 md:h-36', text: 'SECURE', color: 'emerald' },
+    { id: 10, top: '88%', right: '18%', size: 'w-16 h-16 md:w-24 md:h-24', text: 'GAS', color: 'white' },
 
     // Abstract chips for depth
-    { id: 11, top: '15%', left: '30%', size: 'w-12 h-12', text: '', color: 'red' },
-    { id: 12, top: '80%', right: '35%', size: 'w-10 h-10', text: '', color: 'emerald' },
+    { id: 11, top: '15%', left: '30%', size: 'w-10 h-10 md:w-12 md:h-12', text: '', color: 'red' },
+    { id: 12, top: '80%', right: '35%', size: 'w-8 h-8 md:w-10 md:h-10', text: '', color: 'emerald' },
   ];
 
   const getColorClasses = (color: string) => {
@@ -140,7 +140,7 @@ const FeatureSection: React.FC = () => {
           </div>
         </div>
 
-        <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter mb-6 text-white uppercase leading-[0.9]">
+        <h2 className="text-3xl md:text-7xl font-black italic tracking-tighter mb-6 text-white uppercase leading-[0.9]">
           High Stakes.<br />High Speed.
         </h2>
 

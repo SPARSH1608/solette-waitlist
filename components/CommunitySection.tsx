@@ -8,7 +8,7 @@ const CommunitySection: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="/assets/image.jpeg"
-          className="w-full ml-16 h-full object-cover opacity-60 md:opacity-100"
+          className="w-full md:ml-16 h-full object-cover opacity-40 md:opacity-100"
           alt="Community Experience"
         />
         {/* Gradients for blending and readability */}
@@ -20,7 +20,7 @@ const CommunitySection: React.FC = () => {
 
         {/* Left Side: Content Area */}
         <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-          <h2 className="text-5xl md:text-8xl font-black italic tracking-tighter text-white mb-10 leading-[0.9]">
+          <h2 className="text-4xl md:text-8xl font-black italic tracking-tighter text-white mb-10 leading-[0.9]">
             Spin. Watch.<br />
             Bet. Own.
           </h2>

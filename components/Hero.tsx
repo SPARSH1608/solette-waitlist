@@ -39,8 +39,8 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Main Title - Inspired by 'GANG' style */}
-        <div className="relative mb-16 md:mb-24">
-          <h1 className="text-[15vw] md:text-[18vw] leading-[0.8] font-[900] uppercase italic tracking-tighter mix-blend-difference drop-shadow-2xl">
+        <div className="relative mb-8 md:mb-24">
+          <h1 className="text-[20vw] md:text-[18vw] leading-[0.8] font-[900] uppercase italic tracking-tighter mix-blend-difference drop-shadow-2xl">
             SOLETTE
           </h1>
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center gap-4 opacity-40">
@@ -53,35 +53,35 @@ const Hero: React.FC = () => {
         {/* Bottom CTA / Tagline Area */}
         <div className="flex flex-col md:flex-row justify-between items-end gap-8 w-full">
 
-          <div className="text-left max-w-xs order-2 md:order-1">
-            <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter mb-2">
-              Pure Speed. <br /> Pure Luck.
+          <div className="text-left w-full md:max-w-xs order-2 md:order-1 flex flex-col items-center md:items-start">
+            <h3 className="text-lg md:text-2xl font-black uppercase tracking-tighter mb-2 text-center md:text-left">
+              Pure Speed. <br className="hidden md:block" /> Pure Luck.
             </h3>
             <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] opacity-60 mb-6">
               Powered by Solana L1
             </p>
           </div>
 
-          <div className="text-right order-1 md:order-2 self-center md:self-end">
-            <div className="mb-4">
-              <span className="text-xs font-bold uppercase tracking-[0.4em] opacity-40 block mb-2">Welcome to the future</span>
-              <h2 className="text-2xl md:text-4xl font-bold uppercase tracking-tight">
+          <div className="text-center md:text-right order-1 md:order-2 w-full md:w-auto flex flex-col items-center md:items-end">
+            <div className="mb-6 md:mb-4">
+              <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.4em] opacity-40 block mb-2">Welcome to the future</span>
+              <h2 className="text-xl md:text-4xl font-bold uppercase tracking-tight">
                 WES WALKER <br />
-                <span className="text-sm md:text-xl font-medium tracking-[0.2em] solana-text-gradient uppercase">On Solana L1</span>
+                <span className="text-xs md:text-xl font-medium tracking-[0.2em] solana-text-gradient uppercase">On Solana L1</span>
               </h2>
             </div>
-            <div className="flex flex-col items-end gap-1">
-              <p className="text-[10px] uppercase font-mono tracking-widest opacity-50 mb-4">BY SOLETTE LABS</p>
+            <div className="flex flex-col items-center md:items-end gap-1">
+              <p className="text-[10px] uppercase font-mono tracking-widest opacity-50 mb-6">BY SOLETTE LABS</p>
 
               <button
                 onClick={() => setIsWaitlistOpen(true)}
-                className="px-8 py-4 bg-[#14F195] hover:bg-[#0fd985] text-black font-black uppercase tracking-[0.2em] rounded-full text-xs transition-all shadow-[0_0_40px_rgba(20,241,149,0.2)] hover:scale-105 active:scale-95 mb-6"
+                className="w-full md:w-auto px-8 py-4 bg-[#14F195] hover:bg-[#0fd985] text-black font-black uppercase tracking-[0.2em] rounded-full text-[10px] md:text-xs transition-all shadow-[0_0_40px_rgba(20,241,149,0.2)] hover:scale-105 active:scale-95 mb-8 md:mb-6"
               >
                 Join The Waitlist
               </button>
 
-              <div className="w-12 h-[1px] bg-white/20 mt-2"></div>
-              <button className="text-[11px] md:text-[13px] font-black uppercase tracking-[0.5em] mt-4 group flex items-center gap-2 hover:gap-4 transition-all">
+              <div className="w-12 h-[1px] bg-white/20 mt-2 hidden md:block"></div>
+              <button className="text-[10px] md:text-[13px] font-black uppercase tracking-[0.5em] mt-4 group flex items-center gap-2 hover:gap-4 transition-all">
                 DISCOVER
                 <span className="w-4 h-[2px] bg-white group-hover:w-8 transition-all"></span>
               </button>
